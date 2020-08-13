@@ -55,6 +55,26 @@
         #head12{
             color:green;
         }
+        .linker2{
+            text-decoration: none;
+            color:green;
+        }
+        #btn1{
+            border-radius: 10px;
+            padding:10px 15px;
+            background-color: teal;
+            color:white; 
+            border: none;
+            outline: none;
+        }
+        #mytext{
+            padding: 6px 10px;
+            font-size:1rem;
+            /* padding-left:10px */
+        }
+        #bottom-1{
+            padding-left:20px;
+        }
     </style>
 </head>
 <body>
@@ -74,15 +94,16 @@
     
     <div id="bottom-1">
         <input type="text" placeholder="Enter you name" id="mytext">
-        <button onclick="change()">Create</button>
+        <button onclick="change()" id="btn1">Create</button>
     </div>
     <div id="bottom-2">
         <div class="container">
-            <i class="fab fa-facebook" style="font-size:60px;"></i>
-            <a href="https://api.whatsapp.com/send?text=Hey%21%20r%20u%20there%3F%F0%9F%91%80%20%0Ahttps%3A%2F%2Fwww.whisperyourwish.com%2Fjanmashtami%2Findex.php%3Fname%3DEhtesham%2520ali%26rev%3D213%26sharevia%3Dwhatsapp" class="mx-3 share-btn" target="_blank"><i class="fab fa-whatsapp" style="font-size:60px;"></i></a>
+            <!-- <a href="https://www.facebook.com/sharer/sharer.php?quote=%23happyjanmashtami&u=https%3A%2F%2Fwww.whisperyourwish.com%2Fjanmashtami%2Findex%2FEhtesham%2520ali%2F213%2Ffb" class="mx-3 share-btn" target="_blank"><i class="fab fa-facebook" style="font-size:60px;"></i></a> -->
+            <a href="https://api.whatsapp.com/send?text=https://ehteshamali-889.github.io/Independance-day-site/." class="linker2" target="_blank"><i class="fab fa-whatsapp" style="font-size:60px;"></i></a>
         </div>
         
     </div>
+    <!-- https://ehteshamali-889.github.io/Independance-day-site/. -->
     <!-- <a href="https://api.whatsapp.com/send?text=Hey%21%20r%20u%20there%3F%F0%9F%91%80%20%0Ahttps%3A%2F%2Ffile:///D:/video/Javascript%20codes/Real%20work/Project-1/index2.html%2F%2F%3Fname%3DEhtesham%2520ali%26rev%3D213%26sharevia%3Dwhatsapp" class="mx-3 share-btn" target="_blank"><i class="fab fa-whatsapp" style="font-size:60px;" aria-hidden="true"></i></a> -->
         
 </body>
@@ -98,7 +119,8 @@
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.2.0/dist/confetti.browser.min.js"></script>
         <script>
             // var myAudio = document.querySelector('#audio');
-            var myAudio =new Audio("https://www.whisperyourwish.com/janmashtami/assets/song/govinda.mp3");
+            // var myAudio =new Audio("https://www.whisperyourwish.com/janmashtami/assets/song/govinda.mp3");
+            var myAudio =new Audio("Pak.mp3");
             //  var bottom=document.getElementById("bottom");
             
             
@@ -126,8 +148,8 @@
                     case 2:
 
                         if (myAudio) {
-                            myAudio.play()
-                            myAudio.volume=0.2
+                            myAudio.play();
+                            myAudio.volume=1;
                         }
                         $('#mainImage').attr('src', 'https://www.whisperyourwish.com/janmashtami/assets/images/4.png');
                         $('#head1').css('display', 'none');
